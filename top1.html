@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipino Folklore and Mythology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            color: #2980b9;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            position: relative;
+            width: 30%;
+            min-width: 300px;
+            height: 400px;
+            background-color: #474dc3;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            perspective: 1000px;
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card__content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #474dc3;
+            transform: rotateX(-90deg);
+            transform-origin: bottom;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px #000000;
+        }
+        .card:hover .card__content {
+            transform: rotateX(0deg);
+        }
+        .card__title {
+            margin: 0;
+            padding-left: 5px;
+            font-size: 24px;
+            color: var(--white);
+            font-weight: 700;
+        }
+        .card__description {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #ffffff;
+            line-height: 1.4;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        .video-container video {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        .card a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Filipino Folklore and Mythology</h1>
+    <p>Discover the ancient myths, legendary creatures, and divine beings of the Philippines.</p>
+</header>
+
+<nav>
+    <a href="#deities">Deities</a>
+    <a href="#creatures">Mythical Creatures</a>
+    <a href="#legends">Famous Legends</a>
+    <a href="#about">About</a>
+    <a href="#video">Video</a>
+</nav>
+
+<main>
+    <section id="deities">
+        <h2>Filipino Deities</h2>
+        <p>Filipino mythology is rich with gods and goddesses, each with unique powers and roles. Here are some of the most significant ones:</p>
+        <div class="image-container">
+            <div class="card">
+                <a href="https://www.aswangproject.com/bathalas-seven-children/" target="_blank"></a>
+                <img src="/source/bathala.jpg" alt="Bathala">
+                <div class="card__content">
+                    <p class="card__title">Bathala</p>
+                    <p class="card__description">The supreme god in Tagalog mythology, creator of the world and ruler of the heavens.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://mythlok.com/mayari/" target="_blank"></a>
+                <img src="/source/mayari.jpg" alt="Mayari">
+                <div class="card__content">
+                    <p class="card__title">Mayari</p>
+                    <p class="card__description">The goddess of the moon, daughter of Bathala, and known for her beauty and strength.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://mythlok.com/lakapati/" target="_blank"></a>
+                <img src="/source/lakapati.jpg" alt="Lakapati">
+                <div class="card__content">
+                    <p class="card__title">Lakapati</p>
+                    <p class="card__description">The goddess of fertility and abundance, widely worshipped by Filipino farmers.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://anakningsiuala.blogspot.com/2014/06/viva-apung-iru-ninu-i-apung-iru.html" target="_blank"></a>
+                <img src="/source/apung-iru.jpg" alt="Apung Iru">
+                <div class="card__content">
+                    <p class="card__title">Apung Iru</p>
+                    <p class="card__description">A supreme deity in Kapampangan mythology, said to govern both the heavens and earth.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://filipiknow.net/philippine-mythology-gods-and-goddesses/" target="_blank"></a>
+                <img src="/source/idalonl.JPG" alt="Idalon">
+                <div class="card__content">
+                    <p class="card__title">Idalon</p>
+                    <p class="card__description">A deity of the Ifugao people, Idalon is known for his wisdom and guidance in times of war.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://vizayanmyths.blogspot.com/2013/05/kasaraysarayan-sa-silgan.html" target="_blank"></a>
+                <img src="/source/sumugang.jpg" alt="Sumagang">
+                <div class="card__content">
+                    <p class="card__title">Sumagang</p>
+                    <p class="card__description">The god of the seas and protector of fishermen in the Visayan region, Sumagang is invoked for safe travels over the water.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>Filipino Folklore Video</h2>
+        <p>Watch this video to learn more about Filipino folklore and mythology:</p>
+        <div class="video-container">
+            <a href="https://youtu.be/ktIFKjPEcRk?si=VB_OJPqH8Scib9Qg" target="_blank">
+                <iframe width="590" height="340" src="https://www.youtube.com/embed/ktIFKjPEcRk" allowfullscreen></iframe>
+            </a>
+        </div>
+    </section>
+
+    <section id="creatures">
+        <h2>Mythical Creatures</h2>
+        <p>Filipino folklore is filled with fascinating creatures, often both terrifying and enchanting. Some of the most popular include:</p>
+        <div class="image-container">
+            <div class="card">
+                <a href="https://mythology.net/monsters/aswang/" target="_blank"></a>
+                <img src="/source/aswang,jpg.webp" alt="Aswang">
+                <div class="card__content">
+                    <p class="card__title">Aswang</p>
+                    <p class="card__description">A shape-shifting monster known for its ability to suck blood, often associated with witches and vampires.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://mythicalcreatures.info/characters/kapre/" target="_blank"></a>
+                <img src="/source/kapre.jpg" alt="Kapre">
+                <div class="card__content">
+                    <p class="card__title">Kapre</p>
+                    <p class="card__description">A large, tree-dwelling creature that smokes cigars and is known for its mischievous ways.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://mythicalencyclopedia.com/manananggal/" target="_blank"></a>
+                <img src="/source/mananaggal.jpg" alt="Manananggal">
+                <div class="card__content">
+                    <p class="card__title">Manananggal</p>
+                    <p class="card__description">A creature with the ability to separate its upper body from its lower half, usually depicted as a woman who flies at night to prey on victims.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://mythicalencyclopedia.com/tikbalang/" target="_blank"></a>
+                <img src="/source/tikbalang.jpg" alt="Tikbalang">
+                <div class="card__content">
+                    <p class="card__title">Tikbalang</p>
+                    <p class="card__description">A half-horse, half-human creature that leads travelers astray in the forests of the Philippines.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://mythicalencyclopedia.com/engkanto/" target="_blank"></a>
+                <img src="/source/engkanto.webp" alt="Engkantos">
+                <div class="card__content">
+                    <p class="card__title">Engkanto</p>
+                    <p class="card__description">A type of supernatural being known for their beauty and mystical powers. Engkantos are often benevolent but can be mischievous if offended.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="legends">
+        <h2>Famous Legends</h2>
+        <p>Many Filipino myths and legends explain the origins of the islands, the people, and their customs. Here are a few famous ones:</p>
+        <div class="image-container">
+            <div class="card">
+                <a href="https://oldworldgods.com/filipino/maria-makiling-legend/" target="_blank"></a>
+                <img src="/source/maria.webp" alt="Maria Makiling">
+                <div class="card__content">
+                    <p class="card__title">Maria Makiling</p>
+                    <p class="card__description">A famous story about a beautiful diwata (fairy) who lived in the mountains of Laguna. She is known to protect the people of the region.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://emmblu.wordpress.com/bookworm-droppings/the-legend-of-the-pineapple-a-filipino-folk-tale/" target="_blank"></a>
+                <img src="/source/pineapple.jpg" alt="Pineapple Legend">
+                <div class="card__content">
+                    <p class="card__title">Pineapple Legend</p>
+                    <p class="card__description">A folktale explaining how the pineapple fruit got its appearance, stemming from a daughter's disobedience and a mother's curse.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://mythlok.com/the-sun-and-the-moon-filipino-folktale/" target="_blank"></a>
+                <img src="/source/moonandsun.jpg" alt="Legend of the Sun and Moon">
+                <div class="card__content">
+                    <p class="card__title">The Legend of the Sun and Moon</p>
+                    <p class="card__description">A story of the rivalry between the sun and moon, explaining their daily journey across the sky and the balance between light and darkness.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://reynalou16.blogspot.com/2010/09/legend-of-banawe-rice-terraces.html" target="_blank"></a>
+                <img src="/source/rice.jpg" alt="Legend of Banaue Rice Terraces">
+                <div class="card__content">
+                    <p class="card__title">The Legend of Banaue Rice Terraces</p>
+                    <p class="card__description">A tale that explains the origin of the Banaue Rice Terraces, said to be built by a divine couple, showcasing the harmony between nature and humanity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Filipino Folklore and Mythology</h2>
+        <p>Filipino folklore and mythology come from various regions in the Philippines. They blend indigenous beliefs, colonial influences, and stories passed down through generations. From the gods and goddesses of pre-colonial societies to the magical creatures that inhabit the forests and seas, these stories provide a glimpse into the rich cultural heritage of the Filipino people.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Filipino Folklore and Mythology. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
